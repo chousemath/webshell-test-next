@@ -9,12 +9,12 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Home: NextPage = () => {
-  return (
-    <Container>
-      <h1>Home</h1>
-    </Container>
-  )
+const Style: NextPage = () => {
+    return (
+        <Container>
+            <h1>Style</h1>
+        </Container>
+    )
 }
 
-export default Home
+export default Style

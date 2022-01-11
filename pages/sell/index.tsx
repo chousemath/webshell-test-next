@@ -1,3 +1,4 @@
+
 import type { NextPage } from 'next'
 import styled from '@emotion/styled';
 
@@ -9,12 +10,12 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const Home: NextPage = () => {
-  return (
-    <Container>
-      <h1>Home</h1>
-    </Container>
-  )
+const Sell: NextPage = () => {
+    return (
+        <Container>
+            <h1>Sell</h1>
+        </Container>
+    )
 }
 
-export default Home
+export default Sell
