@@ -8,6 +8,7 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import Image from 'next/image';
 
 const Container = styled.div`
   width: 100%;
@@ -25,7 +26,7 @@ const Home: NextPage = () => {
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Webshell Test Next
+              Webshell Test Next v0.0.1
             </Typography>
           </Toolbar>
         </AppBar>
@@ -54,11 +55,13 @@ const Home: NextPage = () => {
             <Typography variant="h5" component="div">
               Native Camera Test
             </Typography>
-            <Typography
+            <Image
+              width={100}
+              height={100}
               id="photo-url"
-              sx={{ mb: 1.5 }}
-              color="text.secondary">
-            </Typography>
+              src=''
+              alt='test image for camera module'
+            />
           </CardContent>
           <CardActions>
             <Button
