@@ -55,9 +55,12 @@ const Home: NextPage = () => {
             <Typography variant="h5" component="div">
               Native Camera Test
             </Typography>
-            <Image
-              width={100}
-              height={100}
+            <img
+              style={{
+                display: 'none',
+                width: '100%',
+                height: 'auto',
+              }}
               id="photo-url"
               src=''
               alt='test image for camera module'
