@@ -1,4 +1,3 @@
-
 import type { NextPage } from 'next'
 import styled from '@emotion/styled';
 
@@ -10,12 +9,12 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const My: NextPage = () => {
+const Community: NextPage = () => {
     return (
         <Container>
-            <h1>My</h1>
+            <h1>Community</h1>
         </Container>
     )
 }
 
-export default My
+export default Community

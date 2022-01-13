@@ -8,11 +8,21 @@ const InvisibleContainer = styled.div`
 const RemoteRouter = () => {
     return (
         <InvisibleContainer>
-            <Link href="/"><a id="remote-router-home">home</a></Link>
-            <Link href="/my"><a id="remote-router-my">my</a></Link>
-            <Link href="/sell"><a id="remote-router-sell">sell</a></Link>
-            <Link href="/shop"><a id="remote-router-shop">shop</a></Link>
-            <Link href="/style"><a id="remote-router-style">style</a></Link>
+            <Link href="/main"><a
+                data-testid="footer-button-0"
+                id="remote-router-main">main</a></Link>
+            <Link href="/community"><a
+                data-testid="footer-button-1"
+                id="remote-router-community">community</a></Link>
+            <Link href="/sell"><a
+                data-testid="footer-button-2"
+                id="remote-router-sell">sell</a></Link>
+            <Link href="/shop"><a
+                data-testid="footer-button-3"
+                id="remote-router-shop">shop</a></Link>
+            <Link href="/login"><a
+                data-testid="footer-button-4"
+                id="remote-router-login">login</a></Link>
         </InvisibleContainer>
     );
 };
