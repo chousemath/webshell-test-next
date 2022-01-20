@@ -1,10 +1,26 @@
-import type { NextPage } from 'next'
-import MainPage from '../components/MainPage';
+import type { NextPage } from "next";
+import Head from "next/head";
+import Layout from "../components/organisms/Layout/Layout";
 
 const Home: NextPage = () => {
   return (
-    <MainPage />
+    <>
+      <Layout>
+        <Head>
+          <title>Kream</title>
+          <meta name="description" content="Fake Kream page" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <h1>Hello from Docker!</h1>
+        <h1>Hello from Docker!</h1>
+        <h1>Hello from Docker!</h1>
+        <h1>Hello from Docker!</h1>
+        <h1>Hello from Docker!</h1>
+        <h1>Hello from Docker!</h1>
+        <h1>Hello from Docker!</h1>
+      </Layout>
+    </>
   );
-}
+};
 
-export default Home
+export default Home;

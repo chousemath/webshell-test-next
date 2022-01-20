@@ -1,0 +1,1 @@
+export { NotiList } from "./NotiList";

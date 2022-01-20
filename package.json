@@ -1,26 +1,45 @@
 {
-  "name": "webshell-test-next",
+  "name": "chicweb",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:clear": "jest --clearCache",
+    "test:watch": "jest --watch",
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "@mui/icons-material": "^5.2.5",
-    "@mui/material": "^5.2.8",
+    "@reduxjs/toolkit": "^1.7.1",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.6",
+    "swiper": "^7.4.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
     "@types/node": "17.0.8",
     "@types/react": "17.0.38",
+    "babel-loader": "^8.2.3",
+    "cross-env": "^7.0.3",
     "eslint": "8.6.0",
     "eslint-config-next": "12.0.7",
+    "husky": "^7.0.0",
+    "jest": "^27.4.7",
     "typescript": "4.5.4"
   }
 }
